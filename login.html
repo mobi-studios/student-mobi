@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        input {
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+        }
+        .button {
+            padding: 10px 15px;
+            background-color: #0072ff;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <h1>欢迎来到在线教学平台</h1>
+    <form action="/login" method="POST">
+        <input type="text" name="username" placeholder="用户名" required>
+        <select name="role" required>
+            <option value="teacher">教师</option>
+            <option value="student">学生</option>
+        </select>
+        <br>
+        <button class="button" type="submit">登录</button>
+    </form>
+</body>
+</html>
